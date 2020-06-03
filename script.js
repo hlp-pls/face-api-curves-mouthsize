@@ -66,7 +66,7 @@ function setup(){
 }
 
 sound_DOM.addEventListener("click",initSound,false);
-sound_DOM.addEventListener("touchend",initSound,false);
+sound_DOM.addEventListener("touchstart",initSound,false);
 
 function initSound(){
 	if(!is_playing){
