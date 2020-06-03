@@ -34,7 +34,7 @@ let count_DOM = document.getElementById("countdown");
 let record_DOM = document.getElementById("record");
 let sound_DOM = document.getElementById("sound");
 
-let predictRate = (!isMobile.any())? 10 : 2;
+let predictRate = (isMobile.any())? 10 : 2;
 let predict_count = 0;
 
 let osc;
@@ -42,7 +42,7 @@ let is_playing = false;
 
 let curves = [];
 let curves_num = 68;
-let curve_detail = (!isMobile.any())? 20 : 10;
+let curve_detail = (isMobile.any())? 10 : 20;
 let impact = 0;
 
 function setup(){
